@@ -10,6 +10,6 @@ public class HollowCapeBodyTickEventProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 1, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 80, 1, (false), (false)));
 	}
 }

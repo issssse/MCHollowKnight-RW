@@ -93,6 +93,42 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hollow_knight_tab"
+    },
+    {
+      "name": "VengefulSpiritRightClicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vengeful_spirit_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VengefulSpirit",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vengeful_spirit"
     }
   ],
   "variable_elements": [],
@@ -106,6 +142,7 @@
       "item.hk.hollow_armor_leggings": "",
       "item.hk.old_nail": "Old Nail",
       "item.hk.nail": "Nail",
+      "item.hk.vengeful_spirit": "Vengeful Spirit",
       "item.hk.hollow_armor_helmet": "Hollow Helmet"
     }
   },

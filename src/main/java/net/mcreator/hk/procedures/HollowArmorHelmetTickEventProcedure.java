@@ -10,6 +10,6 @@ public class HollowArmorHelmetTickEventProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 1, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 80, 1, (false), (false)));
 	}
 }

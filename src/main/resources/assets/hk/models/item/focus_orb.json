@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "hk:models/item/focus_orb_model.obj",
+  "textures": {
+    "m_2": "hk:blocks/focus_orb_texture_a",
+    "m_0": "hk:blocks/focus_orb_texture_b",
+    "particle": "hk:items/focus_orb_item_texture"
+  }
+}

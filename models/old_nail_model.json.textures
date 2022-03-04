@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "old_nail_texture"
+      },
+      "name": "default"
+    }
+  }
+}

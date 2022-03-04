@@ -1,0 +1,64 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "hollow_helmet_item_texture",
+    "enableBody": true,
+    "textureBody": "hollow_cape_item_texture",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "HollowArmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "HollowCapeBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:HollowKnightTab"
+    },
+    "armorTextureFile": "helpinghelmet",
+    "helmetName": "Hollow Helmet",
+    "bodyName": "Hollow Cape",
+    "leggingsName": "",
+    "bootsName": "",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelsteve",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "hollow_helmet_texture.png",
+    "bodyModelName": "Modelsteve",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Body",
+    "armsModelPartR": "Body",
+    "bodyModelTexture": "cape_texture.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hk:items/hollow_helmet_item_texture"
+  }
+}

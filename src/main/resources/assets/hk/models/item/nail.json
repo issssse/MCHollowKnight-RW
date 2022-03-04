@@ -1,0 +1,7 @@
+{
+  "parent": "hk:custom/nail_model",
+  "textures": {
+    "0": "hk:blocks/nail_texture",
+    "particle": "hk:items/nail_item_texture"
+  }
+}

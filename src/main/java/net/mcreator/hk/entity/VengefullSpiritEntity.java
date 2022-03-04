@@ -19,6 +19,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.hk.procedures.VengefullSpiritWhileProjectileFlyingTickProcedure;
+import net.mcreator.hk.procedures.VengefullSpiritProjectileHitsBlockProcedure;
 import net.mcreator.hk.init.HkModEntities;
 
 import java.util.Random;
@@ -72,7 +74,11 @@ public class VengefullSpiritEntity extends AbstractArrow implements ItemSupplier
 		Level world = this.level;
 		Entity entity = this.getOwner();
 		Entity imediatesourceentity = this;
+
+		VengefullSpiritWhileProjectileFlyingTickProcedure.execute(world, x, y, z);
 		if (this.inGround) {
+
+			VengefullSpiritProjectileHitsBlockProcedure.execute(world, x, y, z);
 			this.discard();
 		}
 	}
@@ -81,7 +87,7 @@ public class VengefullSpiritEntity extends AbstractArrow implements ItemSupplier
 		VengefullSpiritEntity entityarrow = new VengefullSpiritEntity(HkModEntities.VENGEFULL_SPIRIT, entity, world);
 		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(false);
+		entityarrow.setCritArrow(true);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -100,7 +106,7 @@ public class VengefullSpiritEntity extends AbstractArrow implements ItemSupplier
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(5);
-		entityarrow.setCritArrow(false);
+		entityarrow.setCritArrow(true);
 		entity.level.addFreshEntity(entityarrow);
 		double x = entity.getX();
 		double y = entity.getY();

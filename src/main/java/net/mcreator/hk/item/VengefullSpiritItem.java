@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.hk.procedures.VengefullSpiritCanUseRangedItemProcedure;
 import net.mcreator.hk.init.HkModTabs;
 import net.mcreator.hk.entity.VengefullSpiritEntity;
 
@@ -48,6 +49,8 @@ public class VengefullSpiritItem extends Item {
 				VengefullSpiritEntity entityarrow = VengefullSpiritEntity.shoot(world, entity, world.getRandom(), 1f, 5, 5);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+
+				VengefullSpiritCanUseRangedItemProcedure.execute();
 			}
 		}
 	}

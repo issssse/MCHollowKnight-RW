@@ -23,15 +23,24 @@
     "animation": "drink",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "VengefullSpiritCanUseRangedItem"
+    },
     "bulletPower": 1.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 5,
-    "bulletParticles": false,
+    "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": ""
     },
     "bulletModel": "Modelvengeful_spirit_bullet_model",
-    "customBulletModelTexture": "vengeful_spirit_bullet_texture.png"
+    "customBulletModelTexture": "vengeful_spirit_bullet_texture.png",
+    "onBulletHitsBlock": {
+      "name": "VengefullSpiritProjectileHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "VengefullSpiritWhileProjectileFlyingTick"
+    }
   }
 }

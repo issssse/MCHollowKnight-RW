@@ -95,12 +95,31 @@
       "registry_name": "hollow_knight_tab"
     },
     {
-      "name": "VengefulSpiritRightClicked",
-      "type": "procedure",
+      "name": "VengefullSpirit",
+      "type": "rangeditem",
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vengeful_spirit_right_clicked",
+      "registry_name": "vengefull_spirit"
+    },
+    {
+      "name": "VengefullSpiritCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vengefull_spirit_can_use_ranged_item",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "VengefullSpiritWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vengefull_spirit_while_projectile_flying_tick",
       "metadata": {
         "dependencies": [
           {
@@ -123,12 +142,32 @@
       }
     },
     {
-      "name": "VengefulSpirit",
-      "type": "item",
-      "sortid": 9,
+      "name": "VengefullSpiritProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vengeful_spirit"
+      "registry_name": "vengefull_spirit_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -142,7 +181,7 @@
       "item.hk.hollow_armor_leggings": "",
       "item.hk.old_nail": "Old Nail",
       "item.hk.nail": "Nail",
-      "item.hk.vengeful_spirit": "Vengeful Spirit",
+      "item.hk.vengefull_spirit": "Vengefull Spirit",
       "item.hk.hollow_armor_helmet": "Hollow Helmet"
     }
   },

@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.hk.client.model.Modelvengeful_spirit_bullet_model;
 import net.mcreator.hk.client.model.Modelsteve;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -16,5 +17,6 @@ public class HkModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelsteve.LAYER_LOCATION, Modelsteve::createBodyLayer);
+		event.registerLayerDefinition(Modelvengeful_spirit_bullet_model.LAYER_LOCATION, Modelvengeful_spirit_bullet_model::createBodyLayer);
 	}
 }

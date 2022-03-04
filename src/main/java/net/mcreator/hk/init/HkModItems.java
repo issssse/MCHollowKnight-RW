@@ -10,7 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.item.Item;
 
-import net.mcreator.hk.item.VengefulSpiritItem;
+import net.mcreator.hk.item.VengefullSpiritItem;
 import net.mcreator.hk.item.OldNailItem;
 import net.mcreator.hk.item.NailItem;
 import net.mcreator.hk.item.HollowArmorItem;
@@ -27,7 +27,7 @@ public class HkModItems {
 	public static final Item HOLLOW_ARMOR_HELMET = register(new HollowArmorItem.Helmet());
 	public static final Item HOLLOW_ARMOR_CHESTPLATE = register(new HollowArmorItem.Chestplate());
 	public static final Item FOCUS_ORB = register(new FocusOrbItem());
-	public static final Item VENGEFUL_SPIRIT = register(new VengefulSpiritItem());
+	public static final Item VENGEFULL_SPIRIT = register(new VengefullSpiritItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
